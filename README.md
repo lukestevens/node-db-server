@@ -9,7 +9,7 @@ This code is a node app that creates a server that can connect to a database tha
 
 3. You'll have to have a database already running on your computer, for this app to connect to.  On line 19 you see a sample Select query that I wrote, because I have a table named bandinfo. Make your own queries that match your database.
 
-4. To RUN this server, you need to tell node about your database connection.  At the command line, in the director where this code is running, type:
+4. To RUN this server, you need to tell node about your database connection.  At the command line, in the directory where this code is running, type:
 PGUSER=[your database user]   PGHOST=localhost   PGPASSWORD=[your db password]   PGDATABASE=[your database name] node server.js
 
 5. Here's how it works: You go to http://localhost:4001/bandinfo/3, for example, and the code in its current state will run a query that does "select * from bandinfo where id = 3".  Make sure you make the queries match your own DB, and that the variables above are correct. When you get it all set up, you should see data in the browser.
